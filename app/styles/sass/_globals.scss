@@ -1,0 +1,23 @@
+body {
+    @include responsive('main') {
+        color: red;
+    }
+    @include responsive('step-one') {
+        font-size: 24px;
+    }
+    @include responsive('step-two') {
+        padding: 60px;
+    }
+}
+
+.hello {
+    @include responsive('main') {
+        display: none;
+    }
+    @include responsive('step-one') {
+        display: block;
+    }
+    @include responsive('step-two') {
+        background-color: blue;
+    }
+}

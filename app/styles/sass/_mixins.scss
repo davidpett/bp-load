@@ -1,0 +1,15 @@
+$breakpoints: (
+    'main' $main,
+    'step-one' $step-one,
+    'step-two' $step-two
+);
+
+@mixin responsive($query) {
+    @each $breakpoint in $breakpoints {
+        $name: nth($breakpoint, 1);
+        $declaration: nth($breakpoint, 2);
+        @if $query == $name and $declaration {
+            @content;
+        }
+    }
+}
