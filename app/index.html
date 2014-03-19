@@ -6,36 +6,38 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="styles/main.css">
-        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="styles/main.css" media="screen">
+        <!--[if lte IE 9]>
             <link rel="stylesheet" href="styles/all.css" media="screen">
         <![endif]-->
 
         <script>
-            var stepOneLoaded = false,
-                stepTwoLoaded = false;
-            window.addEventListener('resize', checkMedia);
-            window.addEventListener('load', checkMedia);
-            function checkMedia() {
-                window.removeEventListener('load', checkMedia);
-                if (!stepOneLoaded && window.matchMedia("screen and (min-width: 640px)").matches) {
-                    stepOneLoaded = true;
-                    addStylesheet('640px', 'step-one');
+            if (typeof window.matchMedia !== 'undefined') {
+                var stepOneLoaded = false,
+                    stepTwoLoaded = false;
+                window.addEventListener('resize', checkMedia);
+                window.addEventListener('load', checkMedia);
+                function checkMedia() {
+                    window.removeEventListener('load', checkMedia);
+                    if (!stepOneLoaded && window.matchMedia("screen and (min-width: 640px)").matches) {
+                        stepOneLoaded = true;
+                        addStylesheet('640px', 'step-one');
+                    }
+                    if (!stepTwoLoaded && window.matchMedia("screen and (min-width: 1024px)").matches) {
+                        stepTwoLoaded = true;
+                        addStylesheet('1024px', 'step-two');
+                    }
+                    if (stepOneLoaded && stepTwoLoaded) {
+                        window.removeEventListener('resize', checkMedia);
+                    }
                 }
-                if (!stepTwoLoaded && window.matchMedia("screen and (min-width: 1024px)").matches) {
-                    stepTwoLoaded = true;
-                    addStylesheet('1024px', 'step-two');
+                function addStylesheet(w, f) {
+                    var style = document.createElement('link');
+                    style.setAttribute('rel', 'stylesheet');
+                    style.setAttribute('media', 'screen and (min-width: ' + w + ')');
+                    style.setAttribute('href', 'styles/' + f + '.css');
+                    document.getElementsByTagName('head')[0].appendChild(style);
                 }
-                if (stepOneLoaded && stepTwoLoaded) {
-                    window.removeEventListener('resize', checkMedia);
-                }
-            }
-            function addStylesheet(w, f) {
-                var style = document.createElement('link');
-                style.setAttribute('rel', 'stylesheet');
-                style.setAttribute('media', 'screen and (min-width: ' + w + ')');
-                style.setAttribute('href', 'styles/' + f + '.css');
-                document.getElementsByTagName('head')[0].appendChild(style);
             }
         </script>
     </head>
