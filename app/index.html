@@ -15,8 +15,6 @@
             if (typeof window.matchMedia !== 'undefined') {
                 var stepOneLoaded = false,
                     stepTwoLoaded = false;
-                window.addEventListener('resize', checkMedia);
-                window.addEventListener('load', checkMedia);
                 function checkMedia() {
                     window.removeEventListener('load', checkMedia);
                     if (!stepOneLoaded && window.matchMedia("screen and (min-width: 640px)").matches) {
@@ -38,6 +36,8 @@
                     style.setAttribute('href', 'styles/' + f + '.css');
                     document.getElementsByTagName('head')[0].appendChild(style);
                 }
+                window.addEventListener('resize', checkMedia);
+                window.addEventListener('load', checkMedia);
             }
         </script>
     </head>
