@@ -1,11 +1,6 @@
 body {
   color: red;
-  font-size: 24px;
-  padding: 60px;
-}
-
-.hello {
-  display: none;
-  display: block;
-  background-color: blue;
+  background-color: #efefef;
+  color: blue;
+  padding: 2em;
 }

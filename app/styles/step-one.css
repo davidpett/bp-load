@@ -1,7 +1,4 @@
 body {
-  font-size: 24px;
-}
-
-.hello {
-  display: block;
+  background-color: #efefef;
+  color: blue;
 }
