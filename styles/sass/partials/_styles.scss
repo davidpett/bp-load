@@ -1,0 +1,15 @@
+body {
+  @include responsive('bp-base') {
+    color: red;
+  }
+  @include responsive('bp-small') {
+    background-color: #efefef;
+    color: blue;
+  }
+  @include responsive('bp-medium') {
+    padding: 2em;
+  }
+  @include responsive('bp-large') {
+    font-size: 2em;
+  }
+}

@@ -1,7 +1,8 @@
 $breakpoints: (
   'bp-base' $bp-base,
   'bp-small' $bp-small,
-  'bp-medium' $bp-medium
+  'bp-medium' $bp-medium,
+  'bp-large' $bp-large
 );
 
 @mixin responsive($query) {
