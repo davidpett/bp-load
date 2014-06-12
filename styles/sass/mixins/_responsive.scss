@@ -4,18 +4,14 @@ $bp-medium: false !default;
 $bp-large: false !default;
 
 $breakpoints: (
-  'base' $bp-base,
-  'small' $bp-small,
-  'medium' $bp-medium,
-  'large' $bp-large
+  'base': $bp-base,
+  'small': $bp-small,
+  'medium': $bp-medium,
+  'large': $bp-large
 );
 
 @mixin responsive($query) {
-  @each $breakpoint in $breakpoints {
-    $name: nth($breakpoint, 1);
-    $declaration: nth($breakpoint, 2);
-    @if $query == $name and $declaration {
-      @content;
-    }
+  @if (map-get($breakpoints, $query)){
+    @content;
   }
 }
