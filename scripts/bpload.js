@@ -27,7 +27,7 @@
     media = null;
     content = null;
   }
-  if (typeof window.matchMedia !== 'undefined') {
+  if (typeof window.matchMedia === 'undefined') {
     var obj = document.querySelectorAll('.bpload.bpall')[0],
         content = document.querySelector('.bpcontent');
     obj.setAttribute('media', obj.getAttribute('data-media'));
