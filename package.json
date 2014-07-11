@@ -1,9 +1,9 @@
 {
-  "name": "bpload",
+  "name": "dp-bpload",
   "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "~3.5.0",
+    "gulp": ">=3.5.0",
     "gulp-autoprefixer": "0.0.6",
     "gulp-concat": "~2.2.0",
     "gulp-connect": "~1.0.9",

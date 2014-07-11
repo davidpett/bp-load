@@ -17,7 +17,7 @@ gulp.task('scripts', function() {
     .pipe($.jshint('.jshintrc'))
     .pipe($.jshint.reporter('default'))
     .pipe($.uglify())
-    .pipe($.concat('bpload.min.js'))
+    .pipe($.concat('dp-bpload.min.js'))
     .pipe(gulp.dest('scripts'))
 });
 
