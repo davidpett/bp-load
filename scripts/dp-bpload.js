@@ -37,6 +37,6 @@
     content = null;
   } else {
     window.addEventListener('resize', dpBpload);
-    dpBpload();
+    window.setTimeout(dpBpload, 50);
   }
 })();
