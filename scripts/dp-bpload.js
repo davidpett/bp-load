@@ -28,13 +28,19 @@
     content = null;
   }
   if (typeof window.matchMedia === 'undefined') {
-    var obj = document.querySelectorAll('.dp-bpall')[0],
-        content = document.querySelector('.dp-bpcontent');
-    obj.setAttribute('media', obj.getAttribute('data-media'));
-    obj.setAttribute('href', obj.getAttribute('data-href'));
-    content.className = content.className.replace(/(?:^|\s)dp-bpcontent(?!\S)/,'');
-    obj = null;
-    content = null;
+    window.setTimeout(function() {
+      var obj = document.querySelectorAll('.dp-bpall')[0],
+          content = document.querySelector('.dp-bpcontent');
+      if (typeof obj !== 'undefined') {
+        obj.setAttribute('media', obj.getAttribute('data-media'));
+        obj.setAttribute('href', obj.getAttribute('data-href'));
+      }
+      if (typeof content !== 'undefined') {
+        content.className = content.className.replace(/(?:^|\s)dp-bpcontent(?!\S)/,'');
+      }
+      obj = null;
+      content = null;
+    }, 50);
   } else {
     window.addEventListener('resize', dpBpload);
     window.setTimeout(dpBpload, 50);
