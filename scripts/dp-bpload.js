@@ -15,7 +15,7 @@
         obj.classList.remove('dp-bpload');
       }
     }
-    if (typeof content !== 'undefined') {
+    if (content) {
       content.classList.remove('dp-bpcontent');
     }
     if (!queries.length) {
@@ -31,11 +31,11 @@
     window.setTimeout(function() {
       var obj = document.querySelectorAll('.dp-bpall')[0],
           content = document.querySelector('.dp-bpcontent');
-      if (typeof obj !== 'undefined') {
+      if (obj) {
         obj.setAttribute('media', obj.getAttribute('data-media'));
         obj.setAttribute('href', obj.getAttribute('data-href'));
       }
-      if (typeof content !== 'undefined') {
+      if (content) {
         content.className = content.className.replace(/(?:^|\s)dp-bpcontent(?!\S)/,'');
       }
       obj = null;
