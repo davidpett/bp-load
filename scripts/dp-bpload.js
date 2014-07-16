@@ -15,7 +15,7 @@
         obj.classList.remove('dp-bpload');
       }
     }
-    if (content) {
+    if (typeof content !== 'undefined') {
       content.classList.remove('dp-bpcontent');
     }
     if (!queries.length) {
