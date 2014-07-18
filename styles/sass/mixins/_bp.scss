@@ -58,7 +58,7 @@ $breakpoints: (
  * @type mixin
  */
 @mixin bp($query) {
-  @if (map-get($breakpoints, $query)){
+  @if (map-get($breakpoints, $query)) {
     @content;
   }
 }
