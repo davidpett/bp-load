@@ -1,7 +1,21 @@
 {
+  "title": "dp-bpload",
   "name": "dp-bpload",
   "version": "0.0.1",
-  "dependencies": {},
+  "homepage": "http://github.com/davidpett/dp-bpload",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidpett/dp-bpload.git"
+  },
+  "author": {
+    "name": "David Pett",
+    "email": "me@davidpett.com",
+    "url": "http://davidpett.com/"
+  },
+  "dependencies": {
+    "sassdoc": "^1.0.2"
+  },
   "devDependencies": {
     "gulp": ">=3.5.0",
     "gulp-autoprefixer": "0.0.6",

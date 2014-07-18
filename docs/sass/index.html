@@ -1,0 +1,850 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>dp-bpload - v0.0.1</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700'>
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+<link href="http://sass-lang.com/assets/img/ico/apple-touch-icon-144x144-precomposed-e674ce95.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="http://sass-lang.com/assets/img/ico/apple-touch-icon-114x114-precomposed-19f81edf.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="http://sass-lang.com/assets/img/ico/apple-touch-icon-72x72-precomposed-363e5ff9.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="http://sass-lang.com/assets/img/ico/apple-touch-icon-57x57-precomposed-f3752e86.png" rel="apple-touch-icon-precomposed">
+<link href="http://sass-lang.com/assets/img/ico/favicon-0ccd2d9d.png" rel="shortcut icon">
+
+</head>
+<body>
+
+  
+  <header class="header" role="banner">
+  <div class="container">
+    <h1 class="header__title">
+      
+        <a href="http://github.com/davidpett/dp-bpload">dp-bpload - v0.0.1</a>
+      
+    </h1>
+    <p class="header__item-count">7 items documented</p>
+  </div>
+</header>
+
+  
+  <div class="container">
+
+    
+    <aside class="sidebar" role="nav">
+      
+  <h2 class="sidebar__heading">Documentation map</h2>
+
+<div class="sidebar__body">
+  <ul class="list-unstyled">
+  
+  
+
+    
+    
+
+      
+      
+
+      
+      
+
+        <li class="sidebar__sub-heading"><a href="#mixin">Mixins</a></li>
+          
+        
+        
+
+          
+          <li>
+            <a href="#mixin-reset">reset</a> 
+            
+            
+          </li>
+
+        
+
+          
+          <li>
+            <a href="#mixin-bp">bp</a> 
+            
+            
+          </li>
+
+        
+
+      
+
+    
+
+      
+      
+
+      
+      
+
+        <li class="sidebar__sub-heading"><a href="#variable">Variables</a></li>
+          
+        
+        
+
+          
+          <li>
+            <a href="#variable-bp-base">bp-base</a> 
+            
+            
+          </li>
+
+        
+
+          
+          <li>
+            <a href="#variable-bp-small">bp-small</a> 
+            
+            
+          </li>
+
+        
+
+          
+          <li>
+            <a href="#variable-bp-medium">bp-medium</a> 
+            
+            
+          </li>
+
+        
+
+          
+          <li>
+            <a href="#variable-bp-large">bp-large</a> 
+            
+            
+          </li>
+
+        
+
+          
+          <li>
+            <a href="#variable-breakpoints">breakpoints</a> 
+            
+            
+          </li>
+
+        
+
+      
+
+    
+
+  
+  </ul>
+</div>
+
+
+
+    </aside>
+
+    
+    <article class="main" role="main">
+      
+
+  
+  
+
+    
+    
+
+      
+      
+
+      
+      
+        <section class="main__section">
+          <h1 class="main__heading" id="mixin">Mixins</h1>
+
+          
+          
+
+            
+            
+            
+            <section class="main__item  item" id="mixin-reset">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-reset">reset</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+
+
+<pre class="item__code"><code class="language-scss">@mixin reset() { ... }</code></pre>
+
+
+
+  
+  
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>A general meyerweb reset</p></div>
+
+
+  <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_reset.scss</code></p>
+
+
+
+
+            </section>
+
+          
+
+            
+            
+            
+            <section class="main__item  item" id="mixin-bp">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-bp">bp</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+<pre class="item__code"><code class="language-scss">@mixin bp($query) { ... }</code></pre>
+
+
+
+  
+  
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>Checks whether or not to export the content</p></div>
+
+
+  <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden">mixin parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden">mixin parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden">mixin parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden">mixin parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$query</code></th>
+          <td data-label="desc"><p>string to check if variable is set to <code>true</code> or <code>false</code> to export the <code>@content</code></p></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+        </section>
+
+      
+
+    
+
+      
+      
+
+      
+      
+        <section class="main__section">
+          <h1 class="main__heading" id="variable">Variables</h1>
+
+          
+          
+
+            
+            
+            
+            <section class="main__item  item" id="variable-bp-base">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-bp-base">bp-base</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+<pre class="item__code"><code class="language-scss">$bp-base: false !default;</code></pre>
+
+  
+
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>Defines whether the content should be exported for the base.css file</p></div>
+
+
+  
+  <h3 class="item__sub-heading">Type</h3>
+
+  <p>
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+
+            
+            
+            
+            <section class="main__item  item" id="variable-bp-small">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-bp-small">bp-small</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+<pre class="item__code"><code class="language-scss">$bp-small: false !default;</code></pre>
+
+  
+
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>Defines whether the content should be exported for the small.css file</p></div>
+
+
+  
+  <h3 class="item__sub-heading">Type</h3>
+
+  <p>
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+
+            
+            
+            
+            <section class="main__item  item" id="variable-bp-medium">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-bp-medium">bp-medium</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+<pre class="item__code"><code class="language-scss">$bp-medium: false !default;</code></pre>
+
+  
+
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>Defines whether the content should be exported for the medium.css file</p></div>
+
+
+  
+  <h3 class="item__sub-heading">Type</h3>
+
+  <p>
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+
+            
+            
+            
+            <section class="main__item  item" id="variable-bp-large">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-bp-large">bp-large</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+<pre class="item__code"><code class="language-scss">$bp-large: false !default;</code></pre>
+
+  
+
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>Defines whether the content should be exported for the large.css file</p></div>
+
+
+  
+  <h3 class="item__sub-heading">Type</h3>
+
+  <p>
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+
+            
+            
+            
+            <section class="main__item  item" id="variable-breakpoints">
+              <h2 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-breakpoints">breakpoints</a>
+
+  
+
+  
+
+  
+    <span class="item__since">Since 0.0.0</span>
+  
+</h2>
+
+
+
+<pre class="item__code"><code class="language-scss">$breakpoints: (
+  'base': $bp-base,
+  'small': $bp-small,
+  'medium': $bp-medium,
+  'large': $bp-large
+);</code></pre>
+
+  
+
+  
+  <h3 class="item__sub-heading">Description</h3>
+  
+  <div class="item__description"><p>An Array of the breakpoints for the bp mixin to iterate over</p></div>
+
+
+  
+  <h3 class="item__sub-heading">Type</h3>
+
+  <p>
+  
+    <code>Array</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <h3 class="item__sub-heading">TODO's</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>something cool</p></li>
+    
+  </ul>
+	
+
+  
+
+  
+
+  
+  <h3 class="item__sub-heading">Found at</h3>
+
+  <p><code>sass/mixins/_bp.scss</code></p>
+
+
+
+
+            </section>
+
+          
+        </section>
+
+      
+
+    
+
+  
+
+
+    </article>
+
+  </div>
+
+  
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <a class="project-info__name" href="http://github.com/davidpett/dp-bpload">dp-bpload</a>
+          
+
+          <!-- Version -->
+          <span class="project-info__version"> - v0.0.1</span>
+
+          <!-- License -->
+          
+          <span class="project-info__license">, under
+            
+              GPL-3.0
+            
+            </span>
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+
+  
+  <script src="assets/js/prism.min.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 'use strict';
 var gulp = require('gulp'),
     connect = require('gulp-connect'),
+    sassdoc = require('sassdoc'),
     $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function() {
@@ -21,7 +22,18 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('scripts'))
 });
 
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('sassdoc', function() {
+  return sassdoc.documentize('styles/sass', 'docs/sass', {
+    'display': {
+      'access': ['public', 'private'],
+      'alias': false,
+      'watermark': true
+    },
+    'package': './package.json'
+  });
+});
+
+gulp.task('default', ['styles', 'scripts', 'sassdoc']);
 
 gulp.task('connect', connect.server({
   root: [__dirname],
