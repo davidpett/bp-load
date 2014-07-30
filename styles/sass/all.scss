@@ -4,3 +4,7 @@ $bp-medium: true;
 $bp-large: true;
 
 @import "config/config";
+
+body {
+  display: block;
+}

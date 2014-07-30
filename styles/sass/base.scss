@@ -4,7 +4,7 @@ $bp-base: true;
 
 
 @include bp('base') {
-  .dp-bpcontent {
+  body {
     display: block;
   }
 }
