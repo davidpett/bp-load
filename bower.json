@@ -16,7 +16,7 @@
     "loader"
   ],
   "license": "GPL-3.0",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
