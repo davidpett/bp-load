@@ -8,6 +8,7 @@ node_modules
 gulpfile.js
 package.json
 README.md
+LICENSE
 
-scripts/bpload.js
+scripts/bp-load.js
 styles/sass
