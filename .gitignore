@@ -1,3 +1,13 @@
+docs
 node_modules
 .sass-cache
 *.DS_Store
+
+.jshintrc
+.editorconfig
+gulpfile.js
+package.json
+README.md
+
+scripts/bpload.js
+styles/sass
