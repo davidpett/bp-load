@@ -1,12 +1,12 @@
 {
-  "title": "dp-bpload",
-  "name": "dp-bpload",
+  "title": "bp-load",
+  "name": "bp-load",
   "version": "0.0.1",
-  "homepage": "http://github.com/davidpett/dp-bpload",
+  "homepage": "http://github.com/davidpett/bp-load",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/davidpett/dp-bpload.git"
+    "url": "git://github.com/davidpett/bp-load.git"
   },
   "author": {
     "name": "David Pett",
