@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   return gulp.src('styles/sass/*.scss')
     .pipe($.rubySass({
-      style: 'compressed'
+      style: 'compressed',
+      sourcemap: false
     }))
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('styles'))
