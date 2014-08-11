@@ -35,6 +35,15 @@ $bp-medium: false !default;
 $bp-large: false !default;
 
 /**
+ * Defines whether the content should be exported for the large.css file
+ *
+ * @since 0.0.0
+ *
+ * @type Bool
+ */
+$bp-xlarge: false !default;
+
+/**
  * An Array of the breakpoints for the bp mixin to iterate over
  *
  * @since 0.0.0
@@ -45,7 +54,8 @@ $breakpoints: (
   'base': $bp-base,
   'small': $bp-small,
   'medium': $bp-medium,
-  'large': $bp-large
+  'large': $bp-large,
+  'x-large': $bp-xlarge
 );
 
 /**
