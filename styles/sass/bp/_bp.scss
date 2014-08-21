@@ -51,11 +51,11 @@ $bp-xlarge: false !default;
  * @type Array
  */
 $breakpoints: (
-  'base': $bp-base,
-  'small': $bp-small,
-  'medium': $bp-medium,
-  'large': $bp-large,
-  'xlarge': $bp-xlarge
+    'base': $bp-base,
+    'small': $bp-small,
+    'medium': $bp-medium,
+    'large': $bp-large,
+    'xlarge': $bp-xlarge
 );
 
 /**
@@ -68,9 +68,9 @@ $breakpoints: (
  * @type mixin
  */
 @mixin bp($query) {
-  @if (map-get($breakpoints, $query)) {
-    @content;
-  }
+    @if (map-get($breakpoints, $query)) {
+        @content;
+    }
 }
 
 
