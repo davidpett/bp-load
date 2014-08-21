@@ -11,7 +11,7 @@ gulp.task('styles', function() {
       sourcemap: false
     }))
     .pipe($.autoprefixer('last 1 version'))
-    .pipe(gulp.dest('styles'))
+    .pipe(gulp.dest('styles/dist'))
 });
 
 gulp.task('scripts', function() {
