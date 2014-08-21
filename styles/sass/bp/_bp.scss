@@ -35,7 +35,7 @@ $bp-medium: false !default;
 $bp-large: false !default;
 
 /**
- * Defines whether the content should be exported for the large.css file
+ * Defines whether the content should be exported for the xlarge.css file
  *
  * @since 0.0.0
  *
@@ -55,7 +55,7 @@ $breakpoints: (
   'small': $bp-small,
   'medium': $bp-medium,
   'large': $bp-large,
-  'x-large': $bp-xlarge
+  'xlarge': $bp-xlarge
 );
 
 /**
