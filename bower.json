@@ -15,7 +15,7 @@
     "breakpoint",
     "loader"
   ],
-  "license": "GPL-3.0",
+  "license": "",
   "private": false,
   "ignore": [
     "**/.*",
